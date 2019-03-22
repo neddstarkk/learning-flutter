@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/foundation.dart';
-
+import 'new_page.dart';
 
 void main() => runApp(App());
 
@@ -12,6 +12,9 @@ class App extends StatelessWidget {
           primarySwatch: Colors.deepPurple,
       ),
       home: HomePage(),
+      routes: <String, WidgetBuilder>{
+        "/a": (context) => NewPage("New Page"),
+      },
     );
   }
 }
@@ -48,6 +51,7 @@ class HomePageState extends State<HomePage> {
             ListTile(
               title: Text("Page One"),
               trailing: Icon(Icons.arrow_upward),
+              onTap: () => Navigator.of(context).pushNamed("/a"),
             ),
             ListTile(
               title: Text("Page Two"),
