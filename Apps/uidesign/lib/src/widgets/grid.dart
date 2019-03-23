@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../screens/grid_file.dart';
 
 class Grid extends StatefulWidget {
   @override
@@ -18,15 +19,14 @@ class _GridState extends State<Grid> {
         print(i);
         return GestureDetector(
           onTap: () {
-            Navigator.pushNamed(context, '/widget');
+            Navigator.push(context, MaterialPageRoute(builder: (__)=> ImageDetailScreen('photo${i+1}.jpg')));
           },
-          child: Container(
+          child: Card(
             margin: EdgeInsets.all(5.0),
-            decoration: BoxDecoration(
-              border: Border(),
-              borderRadius: BorderRadius.circular(10.0),
+            shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(4.0),
             ),
-            child: Image.asset('photo${i+1}.jpg', fit: BoxFit.cover,),
+            child: Image.asset('photo${i+1}.jpg', fit: BoxFit.fill),
           ),
         );
       },

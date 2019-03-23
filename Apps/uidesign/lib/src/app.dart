@@ -1,15 +1,12 @@
 import 'package:flutter/material.dart';
 import 'widgets/grid.dart';
-import 'screens/grid_file.dart';
 
 class App extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       initialRoute: '/',
-      routes: {
-        '/widget': (context) => NewScreen()
-      },
+
 
       theme: ThemeData.dark(),
       home: Scaffold(
@@ -29,7 +26,8 @@ class App extends StatelessWidget {
             BottomNavigationBarItem(
                 icon: Icon(Icons.search), title: Text("Search")),
           ]),
-          body: Grid()),
+          body: Grid(),
+      ),
     );
   }
 }
