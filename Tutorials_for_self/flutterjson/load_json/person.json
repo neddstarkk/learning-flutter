@@ -1,0 +1,30 @@
+[
+  {
+    "name" : "Nedheesh Hasija",
+    "age" : "19",
+    "height" : "180",
+    "gender" : "male",
+    "haircolor" : "black"
+  },
+  {
+    "name" : "Raju Hirani",
+    "age" : "40",
+    "height" : "165",
+    "gender" : "male",
+    "haircolor" : "brown"
+  },
+  {
+    "name" : "Kareena ",
+    "age" : "22",
+    "height" : "153",
+    "gender" : "female",
+    "haircolor" : "brown"
+  },
+  {
+    "name" : "Rohit Sharma",
+    "age" : "26",
+    "height" : "180",
+    "gender" : "male",
+    "haircolor" : "black"
+  }
+]
